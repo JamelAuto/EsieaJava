@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView recyclerView;
     private int[] images = {R.drawable.austria,R.drawable.benin,R.drawable.cameroon,R.drawable.cuba,R.drawable.egypt,R.drawable.finland,R.drawable.france
-            ,R.drawable.germany,R.drawable.ireland,R.drawable.jordan,R.drawable.latvia,R.drawable.malta,R.drawable.mexico,R.drawable.nepal
+            ,R.drawable.germany,R.drawable.ireland, R.drawable.jordan,R.drawable.latvia,R.drawable.malta,R.drawable.mexico,R.drawable.nepal
             ,R.drawable.rwanda,R.drawable.serbia,R.drawable.singapore,R.drawable.spain,R.drawable.togo,R.drawable.uruguay};
     @Override
     protected void onCreate(Bundle savedInstanceState) {

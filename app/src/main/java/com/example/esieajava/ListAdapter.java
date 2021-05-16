@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.File;
+import java.lang.reflect.Array;
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolder> {
@@ -39,8 +41,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolde
         @Override
         public void onBindViewHolder(ImageViewHolder holder, final int position) {
             int images_id = images[position];
+            String[] arrayCountrie = {"Autriche","Bénin","Cameroun","Cuba","Egypte","Finlande","France","Allemagne","Irlande","Jordanie"
+                                        ,"Lettonie","Malte","Méxique","Népal","Rwanda","Serbie","Singapoure","Espagne","Togo","Uruguay"};
+            String name = null;
             holder.countryFlag.setImageResource(images_id);
-            holder.countryName.setText ("Pays : "+position);
+            holder.countryName.setText (arrayCountrie[position]);
         }
 
     @Override
