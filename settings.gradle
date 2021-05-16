@@ -1,0 +1,2 @@
+rootProject.name = "EsieaJava"
+include ':app'
