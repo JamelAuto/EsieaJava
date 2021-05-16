@@ -9,25 +9,25 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private ListAdapter mAdapter;
+    private ListAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-
+    private RecyclerView recyclerView;
+    private int[] images = {R.drawable.austria,R.drawable.benin,R.drawable.cameroon,R.drawable.cuba,R.drawable.egypt,R.drawable.finland,R.drawable.france
+            ,R.drawable.germany,R.drawable.ireland,R.drawable.jordan,R.drawable.latvia,R.drawable.malta,R.drawable.mexico,R.drawable.nepal
+            ,R.drawable.rwanda,R.drawable.serbia,R.drawable.singapore,R.drawable.spain,R.drawable.togo,R.drawable.uruguay};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         List<String> input = new ArrayList<>();
         for (int i = 1; i <= 20; i++) {
             input.add("Element " + i);
-        }// define an adapter
-        mAdapter = new ListAdapter(input);
-        recyclerView.setAdapter(mAdapter);
-
+        }
+        adapter = new ListAdapter(images);
+        recyclerView.setAdapter(adapter);
     }
 }
