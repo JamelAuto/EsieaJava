@@ -1,4 +1,5 @@
 package com.example.esieajava;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -89,5 +90,11 @@ public class MainActivity extends AppCompatActivity implements  RecyclerViewClic
     @Override
     public void onItemClick(int position) {
         Toast.makeText(this, images[position], Toast.LENGTH_SHORT).show();
+        openActivity2();
+    }
+
+    public void openActivity2(){
+        Intent intent = new Intent(this, Activity2.class);
+        startActivity(intent);
     }
 }
