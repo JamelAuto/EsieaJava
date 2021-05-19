@@ -1,0 +1,16 @@
+{
+  "country": {
+
+    "austria" : {
+      "phone": "+43",
+      "web": ".at",
+      "language": "Allemand"
+    },
+    "austriasss" : {
+      "phone": "+4343",
+      "web": ".addst",
+      "language": "AllemandAllemand"
+    }
+
+  }
+}
