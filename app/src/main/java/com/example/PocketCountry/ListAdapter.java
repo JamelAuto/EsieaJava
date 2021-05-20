@@ -1,4 +1,4 @@
-package com.example.esieajava;
+package com.example.PocketCountry;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,10 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.io.File;
-import java.lang.reflect.Array;
-import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolder> {
         private  int[] images;

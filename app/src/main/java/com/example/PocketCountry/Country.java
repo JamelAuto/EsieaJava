@@ -1,4 +1,4 @@
-package com.example.esieajava;
+package com.example.PocketCountry;
 
 import com.google.gson.annotations.SerializedName;
 
