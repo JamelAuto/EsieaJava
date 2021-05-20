@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EsieaJava">
+        android:theme="@style/Theme.Design.Light.NoActionBar">
         <activity android:name=".Activity2"
-            android:theme="@style/Theme.EsieaJava.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.EsieaJava.NoActionBar">
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
