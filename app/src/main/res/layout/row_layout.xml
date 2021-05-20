@@ -25,6 +25,7 @@
         android:layout_toRightOf="@id/flag"
         android:layout_alignParentBottom="true"
         android:gravity="center_vertical"
+        android:textColor="@color/black"
         android:text="Nom du pays"
         android:textSize="16sp" />
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.PocketCountry.Activity2">
+
+    <TextView
+        android:id="@+id/countryDetail"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Nom du pays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/countryBody"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryDetail"
+        android:layout_height="500dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="128dp"
+        android:layout_height="63dp"
+        android:text="Retour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryBody"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

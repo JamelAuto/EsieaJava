@@ -1,4 +1,4 @@
-package com.example.esieajava;
+package com.example.PocketCountry;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,16 +8,15 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.io.File;
-import java.lang.reflect.Array;
-import java.util.List;
-
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolder> {
         private  int[] images;
+        private RecyclerViewClickInterface recyclerViewClickInterface;
 
-        public ListAdapter(int[] images){
+        public ListAdapter(int[] images, RecyclerViewClickInterface recyclerViewClickInterface){
             this.images = images;
+            this.recyclerViewClickInterface = recyclerViewClickInterface;
         }
+
         public class ImageViewHolder extends RecyclerView.ViewHolder {
             ImageView countryFlag;
             TextView countryName;
@@ -26,6 +25,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolde
                 super(v);
                 countryFlag = v.findViewById(R.id.flag);
                 countryName = v.findViewById(R.id.country);
+
+                itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View vee) {
+                        recyclerViewClickInterface.onItemClick(getBindingAdapterPosition());
+                    }
+                });
             }
         }
 
@@ -43,7 +49,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolde
             int images_id = images[position];
             String[] arrayCountrie = {"Autriche","Bénin","Cameroun","Cuba","Egypte","Finlande","France","Allemagne","Irlande","Jordanie"
                                         ,"Lettonie","Malte","Méxique","Népal","Rwanda","Serbie","Singapoure","Espagne","Togo","Uruguay"};
-            String name = null;
             holder.countryFlag.setImageResource(images_id);
             holder.countryName.setText (arrayCountrie[position]);
         }
@@ -52,6 +57,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolde
     public int getItemCount() {
         return images.length;
     }
+
 
 
 }
