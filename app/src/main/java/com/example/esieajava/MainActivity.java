@@ -90,11 +90,13 @@ public class MainActivity extends AppCompatActivity implements  RecyclerViewClic
     @Override
     public void onItemClick(int position) {
         Toast.makeText(this, images[position], Toast.LENGTH_SHORT).show();
-        openActivity2();
+        openActivity2(position);
     }
 
-    public void openActivity2(){
+    public void openActivity2(int position){
         Intent intent = new Intent(this, Activity2.class);
+        intent.putExtra("id",position);
         startActivity(intent);
     }
+
 }

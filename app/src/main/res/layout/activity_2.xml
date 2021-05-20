@@ -8,14 +8,14 @@
     tools:context=".Activity2">
 
     <TextView
+        android:id="@+id/countryDetail"
         android:textStyle="bold"
         android:textSize="35dp"
         android:textColor="@color/black"
-        android:id="@+id/include"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:text="Appuyer sur un pays !"
+        android:text="Nom du pays"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
