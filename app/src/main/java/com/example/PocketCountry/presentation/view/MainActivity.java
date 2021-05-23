@@ -1,5 +1,4 @@
 package com.example.PocketCountry.presentation.view;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -8,10 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.PocketCountry.Constants;
 import com.example.PocketCountry.R;
 import com.example.PocketCountry.presentation.controller.MainController;
-import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 import java.util.List;

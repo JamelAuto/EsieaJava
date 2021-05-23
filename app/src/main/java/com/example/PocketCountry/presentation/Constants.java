@@ -1,4 +1,4 @@
-package com.example.PocketCountry;
+package com.example.PocketCountry.presentation;
 
 public class Constants {
     public static String KEY_COUNTRY = "jsonCountryList";
