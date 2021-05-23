@@ -1,4 +1,4 @@
-package com.example.PocketCountry;
+package com.example.PocketCountry.presentation.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.PocketCountry.R;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolder> {
         private  int[] images;
@@ -47,8 +49,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolde
         @Override
         public void onBindViewHolder(ImageViewHolder holder, final int position) {
             int images_id = images[position];
-            String[] arrayCountrie = {"Autriche","Bénin","Cameroun","Cuba","Egypte","Finlande","France","Allemagne","Irlande","Jordanie"
-                                        ,"Lettonie","Malte","Méxique","Népal","Rwanda","Serbie","Singapoure","Espagne","Togo","Uruguay"};
+            String[] arrayCountrie = {"Allemagne","Autriche","Bénin","Cameroun","Cuba","Egypte","Espagne","Finlande","France","Irlande","Jordanie"
+                                        ,"Lettonie","Malte","Méxique","Népal","Rwanda","Serbie","Singapour","Togo","Uruguay"};
             holder.countryFlag.setImageResource(images_id);
             holder.countryName.setText (arrayCountrie[position]);
         }
