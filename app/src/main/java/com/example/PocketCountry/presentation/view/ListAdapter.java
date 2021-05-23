@@ -5,18 +5,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.PocketCountry.R;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolder> {
         private  int[] images;
-        private RecyclerViewClickInterface recyclerViewClickInterface;
+        private OnItemClickListener onItemClickListener;
 
-        public ListAdapter(int[] images, RecyclerViewClickInterface recyclerViewClickInterface){
+        public interface OnItemClickListener {
+            void onItemClick(int position);
+        }
+
+        public ListAdapter(int[] images, OnItemClickListener onItemClickListener){
             this.images = images;
-            this.recyclerViewClickInterface = recyclerViewClickInterface;
+            this.onItemClickListener = onItemClickListener;
         }
 
         public class ImageViewHolder extends RecyclerView.ViewHolder {
@@ -31,7 +33,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ImageViewHolde
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View vee) {
-                        recyclerViewClickInterface.onItemClick(getBindingAdapterPosition());
+                        onItemClickListener.onItemClick(getBindingAdapterPosition());
                     }
                 });
             }

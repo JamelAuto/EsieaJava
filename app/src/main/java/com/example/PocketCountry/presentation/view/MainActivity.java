@@ -1,19 +1,17 @@
 package com.example.PocketCountry.presentation.view;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.PocketCountry.R;
 import com.example.PocketCountry.presentation.controller.MainController;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements  RecyclerViewClickInterface{
+public class MainActivity extends AppCompatActivity implements ListAdapter.OnItemClickListener {
 
     private ListAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -40,13 +38,12 @@ public class MainActivity extends AppCompatActivity implements  RecyclerViewClic
         for (int i = 1; i <= 20; i++) {
             input.add("Element " + i);
         }
-        adapter = new ListAdapter(images, this);
+        adapter = new ListAdapter(images, this::onItemClick);
         recyclerView.setAdapter(adapter);
     }
-
     @Override
     public void onItemClick(int position) {
-        Intent intent = new Intent(this, Activity2.class);
+        Intent intent = new Intent(MainActivity.this, Activity2.class);
         intent.putExtra("id",position);
         startActivity(intent);
     }

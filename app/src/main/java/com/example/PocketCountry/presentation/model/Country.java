@@ -1,7 +1,5 @@
 package com.example.PocketCountry.presentation.model;
 
-import com.google.gson.annotations.SerializedName;
-
 public class Country {
     private String country;
     private String phone;
