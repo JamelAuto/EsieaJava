@@ -1,4 +1,6 @@
-package com.example.PocketCountry;
+package com.example.PocketCountry.data;
+
+import com.example.PocketCountry.presentation.model.Country;
 
 import java.util.List;
 

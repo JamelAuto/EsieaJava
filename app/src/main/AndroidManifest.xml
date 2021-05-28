@@ -11,10 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name="com.example.PocketCountry.Activity2"
+        <activity android:name="com.example.PocketCountry.presentation.view.Activity2"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
-            android:name="com.example.PocketCountry.MainActivity"
+            android:name="com.example.PocketCountry.presentation.view.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
