@@ -11,9 +11,9 @@ Cette application en Java permet de connaître des informations sur des pays gr�
 - Bouton retour vers le menu principal
 
 # Fonctionnalités
-Ecran menu principal :
+Ecran menu principal :<br/>
 ![alt text](https://github.com/JamelAuto/EsieaJava/blob/master/images/accueil.PNG)
-
-Ecran détail d'un élément (onClick) et bouton retour arrière :
+<br/>
+Ecran détail d'un élément (onClick) et bouton retour arrière :<br/>
 ![alt text](https://github.com/JamelAuto/EsieaJava/blob/master/images/detail.PNG)
 
