@@ -12,4 +12,4 @@ Cette application en Java permet de connaître des informations sur des pays gr�
 
 # Fonctionnalités
 Ecran menu principal :
-![image](https://user-images.githubusercontent.com/63288102/120102235-4e47c880-c14a-11eb-869e-5f3080a39fad.png)
+
