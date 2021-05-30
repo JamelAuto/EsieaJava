@@ -12,4 +12,8 @@ Cette application en Java permet de connaître des informations sur des pays gr�
 
 # Fonctionnalités
 Ecran menu principal :
+![alt text](https://github.com/JamelAuto/EsieaJava/blob/master/images/accueil.PNG)
+
+Ecran détail d'un élément (onClick) et bouton retour arrière :
+![alt text](https://github.com/JamelAuto/EsieaJava/blob/master/images/detail.PNG)
 
